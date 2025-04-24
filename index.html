@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Penpot Migration</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      height: auto;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .text-node {
+      background-clip: text !important;
+      -webkit-background-clip: text !important;
+    }
+
+    .board-156aa7a562db {
+      position: relative;
+      width: 100vw;
+      background: #FFF;
+      border-radius: 0px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      z-index: 0;
+      flex-direction: row;
+
+    }
+
+    .board-157a92d872cf {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pure-r-156afbb81704 {
+      width: 100%;
+      height: calc(100vw * 4910 / 1440);
+      aspect-ratio: 1440 / 4910;
+      background: url('PureR.png') no-repeat center center / contain;
+
+    }
+
+    @media (max-width: 600px) {
+      .pure-r-156afbb81704 {
+        width: 100%;
+        height: calc(100vw * 4910 / 1440);
+        aspect-ratio: 4910/1440;
+        background-size: cover; /* Second suggestion added */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="board-156aa7a562db">
+    <div class="board-157a92d872cf">
+      <div class="pure-r-156afbb81704"></div>
+    </div>
+  </div>
+</body>
+</html>
